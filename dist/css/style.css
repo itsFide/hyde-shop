@@ -1,0 +1,139 @@
+.header-top {
+  padding: 12px 0;
+  border-bottom: 1px solid #D2D2D2;
+}
+.header-top__links ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-top__links ul li a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #4A4B4D;
+}
+.header-top__links ul li {
+  margin-left: 22px;
+}
+.header-top__links ul li:first-child {
+  margin-left: 0;
+}
+
+.header {
+  padding: 15px 0;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__links ul {
+  display: flex;
+}
+.header__links ul li {
+  margin-right: 50px;
+}
+.header__links ul li:last-child {
+  margin-right: 0;
+}
+.header__links ul li a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  transition: all 0.3s;
+  text-transform: uppercase;
+  color: #222222;
+}
+.header__links ul li a:hover {
+  color: #818181;
+}
+.header__profile {
+  display: flex;
+}
+.header__profile-item {
+  margin-right: 30px;
+  position: relative;
+}
+.header__profile-item.notification::before {
+  content: "";
+  position: absolute;
+  right: -30%;
+  top: -50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #E2342D;
+}
+.header__profile-item:last-child {
+  margin-right: 0;
+}
+
+.intro {
+  background-color: #F8F8F8;
+  padding: 55px 0;
+}
+.intro__inner {
+  display: flex;
+}
+.intro__info {
+  padding-top: 65px;
+}
+.intro__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #577337;
+}
+.intro__descr {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 15px;
+  color: #707070;
+  width: 80%;
+}
+.intro__btn {
+  margin-top: 38px;
+  display: inline-block;
+  padding: 13px 59px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: #567337;
+  color: #FFFFFF;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+}
+body {
+  font-family: "Montserrat";
+}
+
+.main-container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1268px;
+  margin: 0 auto;
+}
+
+.btn {
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: #445c2b;
+}

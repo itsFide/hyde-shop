@@ -1,0 +1,21 @@
+@import "components/fonts";
+@import "components/vars";
+@import "components/header";
+@import "components/main-page/intro";
+body{
+    font-family: 'Montserrat';
+}
+.main-container{
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1268px;
+    margin: 0 auto;
+}
+.btn{
+    transition: all .3s;
+    &:hover{
+        background-color: #445c2b;
+    }
+}
