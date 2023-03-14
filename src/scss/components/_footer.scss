@@ -1,0 +1,123 @@
+.footer {
+    padding-bottom: 44px;
+    // .footer__inner
+
+    &__inner {
+    }
+
+    // .footer__columns
+
+    &__columns {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .footer__col
+
+    &__col {
+    }
+    &__menu{
+        & ul li a{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+
+
+            color: #222222;
+
+        }
+        & ul li{
+            margin-bottom: 20px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    // .footer__logo
+
+    &__logo {
+    }
+
+    // .footer__send
+
+    &__send {
+        width: 35%;
+        & p{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            /* or 25px */
+
+
+            color: #222222;
+        }
+        &-form{
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #222;
+            padding-bottom: 13px;
+        }
+    }
+
+    // .footer__mail
+
+    &__mail {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+
+
+        color: #222222;
+    }
+
+    // .footer__mail-icon
+
+    &__mail-icon {
+    }
+
+    // .footer__socials
+
+    &__socials {
+        display: flex;
+        margin-top: 22px;
+    }
+
+    // .footer__social-item
+
+    &__social-item {
+        width: 38px;
+        height: 38px;
+        background-color: $green;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 17px;
+        transition: all .3s;
+        &:hover{
+            background-color: #3e5328;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    // .footer__copyright
+
+    &__copyright {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+}
+

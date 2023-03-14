@@ -1,0 +1,128 @@
+.discount {
+    padding-top: 100px;
+    // .discount__inner
+
+    &__inner {
+        display: flex;
+
+    }
+
+    // .discount__img
+
+    &__img {
+        margin-right: 50px;
+    }
+    & .product-item__prev{
+        top: 55%;
+        left: -5%;
+    }
+    & .product-item__next{
+        top: 55%;
+        right: -5%;
+    }
+}
+.discount-info {
+    // width: 670px;
+    min-width: 0;
+    position: relative;
+    padding-top: 27px;
+    // .discount-info__head
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .discount-info__title
+
+    &__title {
+        
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        /* identical to box height */
+        color: $green;
+        & span{
+            font-family: 'Open Sans',sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 54px;
+            /* identical to box height */
+
+
+            color: #4A4B4D;
+
+        }
+    }
+
+    // .discount-info__link
+
+    &__link {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+
+        padding: 10px 15px;
+        box-shadow:0px 3px 6px rgba(0, 38, 155, 0.051);
+        color: #4A4B4D;
+        background-color: #D2D2D2;
+        display: inline-block;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover{
+            background-color: $green;
+            color: #fff;
+        }
+    }
+}
+.discount-slider-wrapper {
+}
+
+.discount-slider {
+    margin-top: 50px;
+}
+
+.discount-wrapper {
+}
+.discount-item {
+
+    // .discount-item__img
+    position: relative;
+    &__img {
+        background: #F3F3F3;
+        padding: 80px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & img{
+            width: 280px;
+            height: 280px;
+        }
+    }
+
+    // .discount-item__title
+
+    &__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        margin-top: 20px;
+        color: #1E1E20;
+    }
+
+    // .discount-item__discount
+    & .product-price{
+        margin-top: 15px;
+    }
+}
+

@@ -8,13 +8,29 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,400&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,400&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
         <title>Hyde</title>
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+
     </head>
     <body>
         @@include('components/header.html')
         @@include('components/main-page/intro.html')
         @@include('components/main-page/catalog.html')
+        @@include('components/main-page/discount.html')
+        @@include('components/main-page/hit.html')
+        @@include('components/main-page/banner.html')
+        @@include('components/footer.html')
         <!-- <div class="wrapper">@@include('path')</div> -->
+        
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main-page.js"></script>
     </body>
 </html>

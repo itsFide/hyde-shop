@@ -1,0 +1,7 @@
+.catalog-intro {
+  background-image: url("../images/catalog-intro.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+}

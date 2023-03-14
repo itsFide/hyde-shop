@@ -1,0 +1,64 @@
+.catalog {
+    padding-top: 100px;
+    // .catalog__inner
+    &-slider-wrapper{
+        position: relative;
+    }
+    &__inner {
+    }
+    &-wrapper{
+        // overflow: hidden;
+    }
+    // .catalog__title
+
+    &__title {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+        /* identical to box height */
+
+
+        color: #567337;
+        & span{
+            color: #707070;
+        }
+        }
+}
+.catalog-slider {
+    position: relative;
+    margin-top: 45px;
+    // overflow: visible !important;
+    
+}
+.catalog-wrapper {
+}
+
+.catalog-item {
+    position: relative;
+    // .catalog-item__img
+    cursor: pointer;
+    &__img {
+        padding: 100px 35px;
+        background: #F3F3F3;
+        & img{
+            width: 320px;
+            height: 320px;
+        }
+    }
+
+    // .catalog-item__title
+
+    &__title {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 25px;
+        color: #1E1E20;
+    }
+}

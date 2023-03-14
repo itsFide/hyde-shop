@@ -1,0 +1,59 @@
+.banner {
+    padding-top: 72px;
+    padding-bottom: 60px;
+    // .banner__inner
+
+    &__inner {
+    }
+
+    // .banner__title
+
+    &__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 42px;
+        line-height: 51px;
+        text-align: center;
+        color: #231F20;
+        & span{
+            color: #567337;
+        }
+    }
+
+    // .banner__descr
+
+    &__descr {
+        width: 55%;
+        margin: 15px auto 0 auto;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 140%;
+        /* or 25px */
+        margin-top: 15px;
+        text-align: center;
+
+        color: #222222;
+    }
+
+    // .banner__btn
+    &__btn-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    &__btn {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        // line-height: 22px;
+        margin-top: 20px;
+        /* identical to box height */
+        padding: 15px 35px;
+        display: inline-flex;
+        color: #FFFFFF;
+
+    }
+}
