@@ -53,6 +53,9 @@
 .header__links ul li a:hover {
   color: #818181;
 }
+.header__logo {
+  transform: translateX(20px);
+}
 .header__profile {
   display: flex;
 }
@@ -551,6 +554,29 @@ body {
   line-height: 20px;
   /* identical to box height */
   color: #FFFFFF;
+}
+
+.product-item__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  margin-top: 20px;
+  color: #1E1E20;
+}
+
+.product-item__img {
+  background: #F3F3F3;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-item__img img {
+  width: 280px;
+  height: 280px;
 }
 
 .product-item__slider-btn {
