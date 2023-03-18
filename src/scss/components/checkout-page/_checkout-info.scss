@@ -1,0 +1,123 @@
+.checkout {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    & .container{
+        max-width: 1268px;
+    }
+}
+
+.checkout-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.checkout-info {
+        width: 612px;
+		// .checkout-info__title
+
+		&__title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 44px;
+
+            color: $green;
+
+		}
+
+		// .checkout-info__form
+
+		&__form {
+            margin-top: 35px;
+            display: flex;
+            flex-direction: column;
+            & input{
+                padding: 13px 20px;
+                border: 1px solid #C4C4C4;
+                width: 100%;
+                margin-bottom: 21px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                
+                color: #222222;
+                &::placeholder{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 22px;
+                    
+                    color: #222222;
+
+                }
+            }
+		}
+
+		// .checkout-info__form-title
+
+		&__form-title {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 25px;
+            color: #222222;
+
+		}
+
+		// .checkout-info__form-wrap
+
+		&__form-wrap {
+            display: flex;
+            gap: 22px;
+		}
+
+		// .checkout-info__form-footer
+
+		&__form-footer {
+            margin-top: 71px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+		}
+
+		// .checkout-info__form-back
+
+		&__form-back {
+            display: flex;
+            align-items: center;
+            & p{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                margin-left: 15px;
+                color: #231F20;
+            }
+		}
+
+		// .checkout-info__form-next
+
+		&__form-next {
+            & button{
+                font-family: 'Open Sans', 'Poppins';
+                background-color: $green;
+                padding: 5px 33px;
+                border-radius: 7px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 33px;
+
+                color: #FFFFFF;
+
+            }
+		}
+}
+.checkout-img {
+}

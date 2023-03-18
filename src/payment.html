@@ -9,13 +9,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,400&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="stylesheet" href="css/payment.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Hyde</title>
 
@@ -23,15 +22,32 @@
 
 <body>
     @@include('components/header.html')
-    @@include('components/checkout-page/checkout-info.html')
+    @@include('components/payment-page/payment-info.html')
 
     @@include('components/footer.html')
     <!-- <div class="wrapper">@@include('path')</div> -->
-
+    <!-- Modal -->
+    <div class="modal__wrapper">
+        <div class="modal">
+            <div class="modal__close"><span></span><span></span></div>
+            <!-- <div class="modal__title"><span>Заголовок</span> </div> -->
+            <div class="modal__body">
+                <img src="images/modal-img.webp" alt="">
+                <div class="modal__content">
+                    <h2 class="modal__title">Заказ успешно сформирован</h2>
+                    <p class="modal__descr">Здесь описан следующий этап клиента, ожидание звонка или подобное</p>
+                    <div class="modal__button "><button class="btn">Продолжить покупки</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="js/single-product.js"></script>
+    <!-- <script src="js/single-product.js"></script> -->
+    <script src="js/payment.js"></script>
     <script src="js/main-page.js"></script>
     <script src="js/app.js"></script>
+    <script>bindModal('.modal__btn', '.modal__wrapper', '.modal__close')
+    </script>
 </body>
 
 </html>

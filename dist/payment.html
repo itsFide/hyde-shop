@@ -9,13 +9,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,400&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="stylesheet" href="css/payment.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Hyde</title>
 
@@ -68,37 +67,50 @@
         </nav>
     </div>
 </header>
-    <section class="checkout">
+    <section class="checkout payment">
     <div class="container">
         <div class="checkout-inner">
             <div class="checkout-info">
-                <h2 class="checkout-info__title">ОФОРМЛЕНИЕ ЗАКАЗА</h2>
+                <h2 class="checkout-info__title">ОПЛАТА</h2>
                 <form action="" method="post" class="checkout-info__form">
-                    <h3 class="checkout-info__form-title">Данные доставки</h3>
-                    <div class="checkout-info__form-wrap">
-                        <input placeholder="Ваше имя" type="text">
-                        <input placeholder="Псевдоним" type="text">
+                    <div class="payment-option">
+                        <label class="payment-option__label">Bitcoin
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="payment-option__label">Apple Wallet
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="payment-option__label">Paypal
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="payment-option__label">Дебетовая или кредитная карта
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
                     </div>
-                    <input placeholder="Город" type="text">
-                    <input placeholder="Комментарий" type="text">
+                    <h3 class="checkout-info__form-title">Реквизиты</h3>
+                    <input placeholder="Номер карты" type="text">
+                    <input placeholder="ФИО" type="text">
                     <div class="checkout-info__form-wrap">
-                        <input placeholder="Email" type="email">
-                        <input placeholder="Комментарий" type="text">
+                        <input placeholder="мм.гг" type="text">
+                        <input placeholder="cvv" type="text">
                     </div>
-                    <input placeholder="Комментарий" type="tel">
                     <div class="checkout-info__form-footer">
                         <div class="checkout-info__form-back">
                             <img src="images/back-arrow.svg" alt="">
                             <p>Вернуться в корзину</p>
                         </div>
                         <div class="checkout-info__form-next">
-                            <button class="btn">Сохранить и продолжиь</button>
+                            <button class="btn modal__btn">Оплатить 400 ₽</button>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="checkout-img">
-                <img src="images/checkout-img.webp" alt="checkout-img">
+                <img src="images/payment-img.webp" alt="payment-img">
             </div>
         </div>
     </div>
@@ -162,11 +174,28 @@
     </div>
 </footer>
     
-
+    <!-- Modal -->
+    <div class="modal__wrapper">
+        <div class="modal">
+            <div class="modal__close"><span></span><span></span></div>
+            <!-- <div class="modal__title"><span>Заголовок</span> </div> -->
+            <div class="modal__body">
+                <img src="images/modal-img.webp" alt="">
+                <div class="modal__content">
+                    <h2 class="modal__title">Заказ успешно сформирован</h2>
+                    <p class="modal__descr">Здесь описан следующий этап клиента, ожидание звонка или подобное</p>
+                    <div class="modal__button "><button class="btn">Продолжить покупки</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="js/single-product.js"></script>
+    <!-- <script src="js/single-product.js"></script> -->
+    <script src="js/payment.js"></script>
     <script src="js/main-page.js"></script>
     <script src="js/app.js"></script>
+    <script>bindModal('.modal__btn', '.modal__wrapper', '.modal__close')
+    </script>
 </body>
 
 </html>
