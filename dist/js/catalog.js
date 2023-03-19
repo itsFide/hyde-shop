@@ -4,10 +4,31 @@ const catalogPage = new Swiper('.products-content__category', {
     loop: false,
     slidesPerView:3.8,
     spaceBetween: 17,
-    // navigation: {
-    //     nextEl: '.catalog-slider-next',
-    //     prevEl: '.catalog-slider-prev',
-    // },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1.2,
+            spaceBetween: 20
+        },
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        700: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        // when window width is >= 480px
+        1125: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        1400: {
+            slidesPerView: 3.8,
+            spaceBetween: 40
+        }
+    }
 });
 
 let productsSidebarTrigger = document.querySelectorAll('.products-sidebar__trigger')
