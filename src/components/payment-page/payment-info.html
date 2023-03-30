@@ -4,34 +4,32 @@
             <div class="checkout-info">
                 <h2 class="checkout-info__title">ОПЛАТА</h2>
                 <form action="" method="post" class="checkout-info__form">
-                    <div class="payment-option">
-                        <label class="payment-option__label">Bitcoin
-                            <input type="radio" checked="checked" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="payment-option__label">Apple Wallet
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="payment-option__label">Paypal
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="payment-option__label">Дебетовая или кредитная карта
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="payment-option__label">Cash on delivery
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
+                    <div class="payment-dropdown">
+                        <div class="payment-trigger">
+                            <p>Bitcoin</p>
+                            <img src="images/products-sidebar-arrow.svg" alt="">
+                        </div>
+                        <div class="payment-option">
+                            <div class="payment-option__label">Cryptocurrency
+                            </div>
+                            <div class="payment-option__label">Apple Wallet
+                            </div>
+                            <div class="payment-option__label">Paypal
+                            </div>
+                            <div class="payment-option__label">Дебетовая или кредитная карта
+                            </div>
+                            <div data-payment="cash-on-delivery" class="payment-option__label">Сash on delivery
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="checkout-info__form-title">Реквизиты</h3>
-                    <input placeholder="Номер карты" type="text">
-                    <input placeholder="ФИО" type="text">
-                    <div class="checkout-info__form-wrap">
-                        <input placeholder="мм.гг" type="text">
-                        <input placeholder="cvv" type="text">
+                    <div class="payment-form-data">
+                        <h3 class="checkout-info__form-title">Реквизиты</h3>
+                        <input placeholder="Номер карты" type="text">
+                        <input placeholder="ФИО" type="text">
+                        <div class="checkout-info__form-wrap">
+                            <input placeholder="ММ.ГГ" type="text">
+                            <input placeholder="CVV" type="text">
+                        </div>
                     </div>
                     <div class="checkout-info__form-footer">
                         <div class="checkout-info__form-back">

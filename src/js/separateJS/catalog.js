@@ -11,21 +11,21 @@ const catalogPage = new Swiper('.products-content__category', {
             spaceBetween: 20
         },
         480: {
-            slidesPerView: 2,
+            slidesPerView: 1.8,
             spaceBetween: 20
         },
         700: {
-            slidesPerView: 2,
+            slidesPerView: 2.8,
             spaceBetween: 20
         },
         // when window width is >= 480px
         1125: {
-            slidesPerView: 3,
+            slidesPerView: 4.2,
             spaceBetween: 30
         },
         // when window width is >= 640px
         1400: {
-            slidesPerView: 3.8,
+            slidesPerView: 4.2,
             spaceBetween: 40
         }
     }

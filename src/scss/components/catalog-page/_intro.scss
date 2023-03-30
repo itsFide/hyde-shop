@@ -1,6 +1,9 @@
 .catalog{
     &-intro{
+        height: 522px;
         & img{
+            height: 100%;
+            object-fit: cover;
             width: 100%;
         }
     }

@@ -51,6 +51,13 @@
     // .single-product__inner
 
     &__inner {
+        & .product-counter{
+            // margin-top: 15px;
+            margin: 15px 0 0 0;
+        }
+        & .product-counter__value{
+            font-size: 14px;
+        }
     }
 
     // .single-product__breadcrumbs
@@ -201,7 +208,7 @@
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 17px;
         /* identical to box height */
 
@@ -270,14 +277,16 @@
     // .single-product__content-btn-add
 
     &__content-btn-add {
-        width: 100%;
+        width: 77%;
+        display: block;
+
         // margin-top: 37px;
         margin-top: 20px;
         padding: 10px 0;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 14px;
         line-height: 24px;
 
         color: #FFFFFF;
@@ -295,6 +304,7 @@
     // .product-info__dropdown
 
     &__dropdown {
+        width: 77%;
     }
 
     // .product-info__dropdown-item
@@ -314,6 +324,7 @@
         & p{
             // text-align: center;
             margin-left: auto;
+            font-size: 14px;
         }
         & img{
             margin-left: auto;

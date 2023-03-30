@@ -150,13 +150,13 @@
 
 		&__category-item {
             background-color: #C7D6B7;
-            padding: 25px 39px;
+            padding: 15px;
             display: flex;
             justify-content: center;
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 16px;
             line-height: 24px;
             margin-right: 20px;
             cursor: pointer;
@@ -237,11 +237,12 @@
         height: 30px;
         display: flex;
         justify-content: center;
-        width: 100%;
+        width: 77%;
+        margin: 15px auto 0 auto;
         align-items: center;
         color: #fff;
         border-radius: 10px;
-        margin-top: 15px;
+        // margin-top: 15px;
     }
 }
 .products-catalog {

@@ -79,7 +79,7 @@
 		// .checkout-info__form-footer
 
 		&__form-footer {
-            margin-top: 71px;
+            margin-top: 25px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -120,4 +120,8 @@
 		}
 }
 .checkout-img {
+    height: 467px;
+    & img{
+        height: 100%;
+    }
 }
