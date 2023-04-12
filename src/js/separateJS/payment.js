@@ -20,9 +20,12 @@ function bindModal(trigger, modal, close) {
 // Оплата
 let paymentTrigger = document.querySelector('.payment-trigger'),
     paymentOption = document.querySelector('.payment-option'),
-    paymentOptionItems = document.querySelectorAll('.payment-option__label')
-    paymentFormData = document.querySelector('.payment-form-data')
+    paymentOptionItems = document.querySelectorAll('.payment-option__label'),
+    paymentFormData = document.querySelector('.payment-form-data'),
+    paymentBtn = document.querySelector('.checkout-info__form-next button'),
+    paymentBtnValue = paymentBtn.innerText;
 
+console.log(paymentBtnValue);
 paymentTrigger.addEventListener('click',()=>{
   paymentTrigger.classList.toggle('active')
   if(paymentTrigger.classList.contains('active')){
@@ -36,9 +39,11 @@ paymentOptionItems.forEach(item=>{
     let paymentTriggerContent = paymentTrigger.querySelector('p');
     paymentTriggerContent.innerText = item.innerText
     if(item.getAttribute('data-payment') == 'cash-on-delivery'){
-      paymentFormData.style.display = 'none'
+      paymentFormData.style.display = 'none';
+      paymentBtn.innerText = "Продолжить"
     } else{
       paymentFormData.style.display = 'block'
+      paymentBtn.innerText = paymentBtnValue
     }
     closeDropDown()
   })
